@@ -54,7 +54,7 @@
                     "url": "https://anongit.kde.org/kaidan",
                     "tag": "v0.4.1",
                     "commit": "da3dd3dfb4bc872070c69eda1a6001fbe6bc3a2c",
-                    "disable_submodules": true
+                    "disable-submodules": true
                 },
                 {
                     "type": "patch",
