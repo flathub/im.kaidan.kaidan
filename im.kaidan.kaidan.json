@@ -12,6 +12,7 @@
         "--socket=x11",
         "--socket=wayland",
         "--device=dri",
+        "--device=all",
         "--talk-name=org.freedesktop.Notifications",
         "--env=QT_QUICK_CONTROLS_STYLE=org.kde.desktop"
     ],
@@ -25,7 +26,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qxmpp-project/qxmpp",
-                    "tag": "v1.2.0"
+                    "tag": "v1.2.1",
+                    "commit": "3ab1d34eceb8776193fe1cdc2070264d7dfbad30"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
@@ -39,10 +41,34 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nu-book/zxing-cpp",
-                    "commit": "d5f2682719af2e00c9c2d689205ea549b48da391"
+                    "tag": "v1.0.8",
+                    "commit": "85f9eeb4ce8f91d8fb732e1ab00243a6527bb414"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/mkspecs", "/etc/xdg/*categories" ]
+        },
+        {
+            "name": "gst-plugins-bad",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts": [
+                "-Ddisable_gtkdoc=true"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.16.1.tar.xz",
+                    "sha256": "56481c95339b8985af13bac19b18bc8da7118c2a7d9440ed70e7dcd799c2adb5"
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/*.la",
+                "/lib/gstreamer-1.0/*.la",
+                "/lib/gstreamer-1.0/include",
+                "/lib/pkgconfig",
+                "/share/gtk-doc"
+            ]
         },
         {
             "name": "kaidan",
@@ -52,20 +78,7 @@
                 {
                     "type": "git",
                     "url": "https://anongit.kde.org/kaidan",
-                    "tag": "v0.4.1",
-                    "commit": "da3dd3dfb4bc872070c69eda1a6001fbe6bc3a2c"
-                },
-                {
-                    "type": "patch",
-                    "path": "add-oars-rating.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "appstream-add-release.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-build-with-QXmpp-1.0.1.patch"
+                    "tag": "v0.5.0"
                 }
             ]
         }
