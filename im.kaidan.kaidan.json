@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.17.2.tar.xz",
-                    "sha256": "fadbf229dbb29cae15ecb1858382aee60f2fa82067673598791c5fdfc52ad2cc"
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.16.2.tar.xz",
+                    "sha256": "f1cb7aa2389569a5343661aae473f0a940a90b872001824bc47fa8072a041e74"
                 }
             ],
             "cleanup": [
