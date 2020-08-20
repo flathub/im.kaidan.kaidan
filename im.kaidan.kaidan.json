@@ -26,8 +26,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qxmpp-project/qxmpp",
-                    "tag": "v1.2.1",
-                    "commit": "3ab1d34eceb8776193fe1cdc2070264d7dfbad30"
+                    "tag": "v1.3.1",
+                    "commit": "f4914c60336082942a23a5edfbc52488695d818b"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
