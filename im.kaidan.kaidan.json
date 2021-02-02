@@ -41,8 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nu-book/zxing-cpp",
-                    "tag": "v1.1.0",
-                    "commit": "2b48016529717786a38b8220e6d7b18f107277a2"
+                    "tag": "v1.1.1",
+                    "commit": "29ec2dd4e5c1cfe977530287936acebac1a40f19"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/mkspecs", "/etc/xdg/*categories" ]
