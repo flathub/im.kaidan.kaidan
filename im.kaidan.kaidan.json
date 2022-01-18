@@ -45,21 +45,28 @@
                     "commit": "2dad8be2466a2bd46037267d9f0e728e08b79140"
                 }
             ],
-            "cleanup": [ "/include", "/lib/cmake", "/mkspecs", "/etc/xdg/*categories" ]
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/lib/pkgconfig",
+                "/mkspecs",
+                "/etc/xdg/*categories"
+            ]
         },
         {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DI18N=1", "-DQUICK_COMPILER=0"],
-            "cleanup": [
-                "/share/icons/hicolor/128x128/apps/kaidan.png"
-            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kaidan",
                     "tag": "v0.8.0",
                     "commit": "e8c0fc7e83ecd8b8187f150668d659562bcbddc4"
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata.patch"
                 }
             ]
         }
