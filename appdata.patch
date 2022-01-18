@@ -1,0 +1,13 @@
+diff --git a/misc/im.kaidan.kaidan.appdata.xml b/misc/im.kaidan.kaidan.appdata.xml
+index ce1ac31..232d882 100644
+--- a/misc/im.kaidan.kaidan.appdata.xml
++++ b/misc/im.kaidan.kaidan.appdata.xml
+@@ -113,7 +113,7 @@
+     <p xml:lang="uk">Список підтримуваних XEP можна знайти у вікі.</p>
+     <p xml:lang="x-test">xxFor a list of supported XEPs, have a look at the Wiki.xx</p>
+   </description>
+-  <launchable type="desktop-id">kaidan.desktop</launchable>
++  <launchable type="desktop-id">im.kaidan.kaidan.desktop</launchable>
+   <url type="homepage">https://kaidan.im</url>
+   <url type="bugtracker">https://invent.kde.org/network/kaidan/issues</url>
+   <url type="help">https://invent.kde.org/network/kaidan/wikis</url>
