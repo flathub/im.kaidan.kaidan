@@ -1,0 +1,25 @@
+From 2be671bd58e04d6bdea0be189083b93b26cf2d43 Mon Sep 17 00:00:00 2001
+From: Newbyte <newbie13xd@gmail.com>
+Date: Tue, 18 Jan 2022 13:28:20 +0100
+Subject: [PATCH 2/2] kaidan.desktop: Set icon to im.kaidan.kaidan
+
+---
+ misc/im.kaidan.kaidan.desktop | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/misc/im.kaidan.kaidan.desktop b/misc/im.kaidan.kaidan.desktop
+index 8aa2b25..8ff5e65 100755
+--- a/misc/im.kaidan.kaidan.desktop
++++ b/misc/im.kaidan.kaidan.desktop
+@@ -114,7 +114,7 @@ Keywords[x-test]=xxchatxx;xxmessagingxx;xximxx;xxjabberxx;xxxmppxx;xxqtxx;xxnetw
+ Keywords[zh_CN]=聊天;消息;im;即时通讯;jabber;xmpp;qt;网络;
+ Keywords[zh_TW]=chat;messaging;im;jabber;xmpp;qt;network;聊天;對話;傳訊;訊息;即時;通訊;網路;網絡;
+ Exec=kaidan %u
+-Icon=kaidan
++Icon=im.kaidan.kaidan
+ StartupNotify=true
+ StartupWMClass=Kaidan
+ Terminal=false
+-- 
+2.34.1
+

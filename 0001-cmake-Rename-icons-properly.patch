@@ -1,0 +1,30 @@
+From 44fc9b8956ffce1a86a805b060ea95c3e159bb6a Mon Sep 17 00:00:00 2001
+From: Newbyte <newbie13xd@gmail.com>
+Date: Tue, 18 Jan 2022 10:33:46 +0100
+Subject: [PATCH 1/2] cmake: Rename icons properly
+
+Fixes Flathub CI.
+---
+ CMakeLists.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f99e75c..5931782 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -413,10 +413,11 @@ elseif(UNIX AND NOT APPLE)
+ 	# install icon (scalable + 128x)
+ 	install(FILES "data/images/kaidan.svg"
+ 	        DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/icons/hicolor/scalable/apps"
++	        RENAME "${APPLICATION_ID}.svg"
+ 	)
+ 	install(FILES "misc/kaidan-128x128.png"
+ 	        DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/icons/hicolor/128x128/apps"
+-	        RENAME "kaidan.png"
++	        RENAME "${APPLICATION_ID}.png"
+ 	)
+ 	# install desktop file
+ 	install(FILES "misc/im.kaidan.kaidan.desktop"
+-- 
+2.34.1
+

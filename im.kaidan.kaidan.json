@@ -1,6 +1,5 @@
 {
     "id": "im.kaidan.kaidan",
-    "rename-icon": "kaidan",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
@@ -57,6 +56,14 @@
                     "url": "https://invent.kde.org/network/kaidan",
                     "tag": "v0.8.0",
                     "commit": "e8c0fc7e83ecd8b8187f150668d659562bcbddc4"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-cmake-Rename-icons-properly.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0002-kaidan.desktop-Set-icon-to-im.kaidan.kaidan.patch"
                 }
             ]
         }
