@@ -2,7 +2,7 @@
     "id": "im.kaidan.kaidan",
     "rename-icon": "kaidan",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "kaidan",
     "finish-args": [
@@ -19,15 +19,28 @@
 
     "modules": [
         {
+            "name": "libomemo-c",
+            "buildsystem": "cmake-ninja",
+            "config-opts": ["-DBUILD_SHARED_LIBS=ON"],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/dino/libomemo-c.git",
+                    "tag": "v0.5.0",
+                    "commit": "0efc07f2811c8fa0edffad28c31ded45186fcdb1"
+                }
+            ]
+        },
+        {
             "name": "qxmpp",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF" ],
+            "config-opts": [ "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/qxmpp-project/qxmpp",
-                    "tag": "v1.4.0",
-                    "commit": "5cf21d869945f6d548805db6d685012cf61e4008"
+                    "tag": "v1.5.5",
+                    "commit": "5a5bebe82e740336bac1914443351d332776b90e"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
@@ -41,8 +54,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/nu-book/zxing-cpp",
-                    "tag": "v1.2.0",
-                    "commit": "2dad8be2466a2bd46037267d9f0e728e08b79140"
+                    "tag": "v2.0.0",
+                    "commit": "bdb857efae30f5f2abfcf3d626bf1156dc055bae"
                 }
             ],
             "cleanup": [
@@ -56,17 +69,13 @@
         {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DI18N=1", "-DQUICK_COMPILER=0"],
+            "config-opts": ["-DQUICK_COMPILER=0"],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kaidan",
-                    "tag": "v0.8.0",
-                    "commit": "e8c0fc7e83ecd8b8187f150668d659562bcbddc4"
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
+                    "tag": "v0.9.0",
+                    "commit": "65b4344fd4010b5ae9c8d4cd61a09f54a8b82458"
                 }
             ]
         }
