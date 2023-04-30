@@ -67,6 +67,31 @@
             ]
         },
         {
+            "name": "kirigami-addons",
+            "config-opts": ["-DBUILD_TESTING=OFF"],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/kirigami-addons.git",
+                    "tag": "v0.8.0",
+                    "commit": "470f93dd00c619dedd41a85f0e53b035ff48d6b1"
+                }
+            ]
+        },
+        {
+            "name": "kquickimageeditor",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/libraries/kquickimageeditor.git",
+                    "tag": "v0.2.0",
+                    "commit": "bd111966bace6886869bb6e9bf5a688d9cdc31bc"
+                }
+            ]
+        },
+        {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
             "config-opts": ["-DQUICK_COMPILER=0"],
