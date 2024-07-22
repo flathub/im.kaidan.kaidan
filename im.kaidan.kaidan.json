@@ -40,8 +40,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/qxmpp-project/qxmpp",
-                    "tag": "v1.5.5",
-                    "commit": "5a5bebe82e740336bac1914443351d332776b90e"
+                    "tag": "v1.8.1",
+                    "commit": "e45d1c869725fafb9698894b55337d24b5b85bfe"
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
