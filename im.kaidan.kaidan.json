@@ -100,8 +100,8 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/network/kaidan",
-                    "tag": "v0.9.1",
-                    "commit": "c3c4f63065d76fa4455278e95147787acfc9c98f"
+                    "tag": "v0.10.0",
+                    "commit": "2aabffd7166bef634ad95b32deb0e5bdac52d9e7"
                 }
             ]
         }
