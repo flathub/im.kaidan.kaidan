@@ -2,7 +2,7 @@
     "id": "im.kaidan.kaidan",
     "rename-icon": "kaidan",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "5.15-24.08",
     "sdk": "org.kde.Sdk",
     "command": "kaidan",
     "finish-args": [
@@ -25,10 +25,15 @@
             "config-opts": ["-DBUILD_SHARED_LIBS=ON"],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/dino/libomemo-c.git",
-                    "tag": "v0.5.0",
-                    "commit": "0efc07f2811c8fa0edffad28c31ded45186fcdb1"
+                    "type": "archive",
+                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.0.tar.gz",
+                    "sha256": "03195a24ef7a86c339cdf9069d7f7569ed511feaf55e853bfcb797d2698ba983",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 359676,
+                        "stable-only": true,
+                        "url-template": "https://github.com/dino/libomemo-c/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -38,57 +43,87 @@
             "config-opts": [ "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON" ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/qxmpp-project/qxmpp",
-                    "tag": "v1.9.2",
-                    "commit": "168e5645d0524aaaf2f69a3900015e7f34208918"
+                    "type": "archive",
+                    "url": "https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.9.2.tar.gz",
+                    "sha256": "b6ddfe446ce5f628d3bc3a2a8d09ea86cdb9b7773435d112192e416f5a69981d",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 4149,
+                        "stable-only": true,
+                        "url-template": "https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
         },
         {
-            "name": "zxing",
-            "config-opts": [ "-DBUILD_SHARED_LIBS=ON", "-DBUILD_EXAMPLES=OFF", "-DBUILD_BLACKBOX_TESTS=OFF", "-DBUILD_UNIT_TESTS=OFF" ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/nu-book/zxing-cpp",
-                    "tag": "v2.0.0",
-                    "commit": "bdb857efae30f5f2abfcf3d626bf1156dc055bae"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/cmake",
-                "/lib/pkgconfig",
-                "/mkspecs",
-                "/etc/xdg/*categories"
-            ]
-        },
-        {
             "name": "kirigami-addons",
-            "config-opts": ["-DBUILD_TESTING=OFF"],
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/libraries/kirigami-addons.git",
-                    "tag": "v0.8.0",
-                    "commit": "470f93dd00c619dedd41a85f0e53b035ff48d6b1"
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.10.0.tar.xz",
+                    "sha256": "9897e70bf167f579cec06d09d49a9a27aba184cbd1b2fce2c3ae757a87b01216",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 242933,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
+                    }
                 }
             ]
         },
         {
             "name": "kquickimageeditor",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_WITH_QT6=OFF"
+            ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/libraries/kquickimageeditor.git",
-                    "tag": "v0.2.0",
-                    "commit": "bd111966bace6886869bb6e9bf5a688d9cdc31bc"
+                    "type": "archive",
+                    "sha256": "330ebf3653883eeebde54385d783c51c2d30ff77d41b294ece79af7e9c21c6f8",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.3.0.tar.xz",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 229033,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "zxing",
+            "config-opts": [
+                "-DBUILD_DEPENDENCIES=LOCAL",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_UNIT_TESTS=OFF",
+                "-DBUILD_BLACKBOX_TESTS=OFF",
+                "-DBUILD_EXAMPLES=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "cleanup": [
+                "/include",
+                "*.pc",
+                "/lib/*/cmake",
+                "libZXing.so"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/zxing-cpp/zxing-cpp/archive/v2.1.0.tar.gz",
+                    "sha256": "6d54e403592ec7a143791c6526c1baafddf4c0897bb49b1af72b70a0f0c4a3fe",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 101246,
+                        "stable-only": true,
+                        "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
+                    }
                 }
             ]
         },
