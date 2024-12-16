@@ -133,10 +133,15 @@
             "config-opts": ["-DQUICK_COMPILER=0"],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://invent.kde.org/network/kaidan",
-                    "tag": "v0.10.0",
-                    "commit": "2aabffd7166bef634ad95b32deb0e5bdac52d9e7"
+                    "type": "archive",
+                    "sha256": "d28ec1cb9bdd44f4b73c23c651b1adfa233981f6d7b1c760e8a7a72c1cdc6f16",
+                    "url": "https://download.kde.org/unstable/kaidan/0.10.1/kaidan-0.10.1.tar.xz",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 361480,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/unstable/kaidan/kaidan-$version.tar.xz"
+                    }
                 }
             ]
         }
