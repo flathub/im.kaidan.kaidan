@@ -17,12 +17,13 @@
         "--env=LD_LIBRARY_PATH=/usr/lib/"
     ],
     "separate-locales": false,
-
     "modules": [
         {
             "name": "libomemo-c",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DBUILD_SHARED_LIBS=ON"],
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -40,7 +41,11 @@
         {
             "name": "qxmpp",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON" ],
+            "config-opts": [
+                "-DBUILD_TESTS=OFF",
+                "-DBUILD_EXAMPLES=OFF",
+                "-DBUILD_OMEMO=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -54,7 +59,11 @@
                     }
                 }
             ],
-            "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/lib/pkgconfig"
+            ]
         },
         {
             "name": "kirigami-addons",
@@ -85,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "330ebf3653883eeebde54385d783c51c2d30ff77d41b294ece79af7e9c21c6f8",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.3.0.tar.xz",
+                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.4.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
@@ -116,8 +125,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/zxing-cpp/zxing-cpp/archive/v2.1.0.tar.gz",
-                    "sha256": "6d54e403592ec7a143791c6526c1baafddf4c0897bb49b1af72b70a0f0c4a3fe",
+                    "url": "https://github.com/zxing-cpp/zxing-cpp/archive/v2.3.0.tar.gz",
+                    "sha256": "64e4139103fdbc57752698ee15b5f0b0f7af9a0331ecbdc492047e0772c417ba",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 101246,
@@ -130,7 +139,9 @@
         {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DQUICK_COMPILER=0"],
+            "config-opts": [
+                "-DQUICK_COMPILER=0"
+            ],
             "sources": [
                 {
                     "type": "archive",
