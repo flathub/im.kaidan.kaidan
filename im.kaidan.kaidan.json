@@ -95,7 +95,6 @@
         {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DQUICK_COMPILER=0"],
             "sources": [
                 {
                     "type": "archive",
