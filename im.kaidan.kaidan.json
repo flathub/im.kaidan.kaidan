@@ -2,7 +2,7 @@
     "id": "im.kaidan.kaidan",
     "rename-icon": "kaidan",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-24.08",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "kaidan",
     "finish-args": [
@@ -40,7 +40,7 @@
         {
             "name": "qxmpp",
             "buildsystem": "cmake-ninja",
-            "config-opts": [ "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON" ],
+            "config-opts": ["-DQT_VERSION_MAJOR=6", "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON"],
             "sources": [
                 {
                     "type": "archive",
@@ -65,8 +65,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.10.0.tar.xz",
-                    "sha256": "9897e70bf167f579cec06d09d49a9a27aba184cbd1b2fce2c3ae757a87b01216",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz",
+                    "sha256": "56e3ceb52055b5603320ea08b27d3673d32a391a8d58646d998227d8b51f0a93",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
@@ -79,50 +79,16 @@
         {
             "name": "kquickimageeditor",
             "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_WITH_QT6=OFF"
-            ],
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "330ebf3653883eeebde54385d783c51c2d30ff77d41b294ece79af7e9c21c6f8",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.3.0.tar.xz",
+                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.4.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "zxing",
-            "config-opts": [
-                "-DBUILD_DEPENDENCIES=LOCAL",
-                "-DBUILD_SHARED_LIBS=ON",
-                "-DBUILD_UNIT_TESTS=OFF",
-                "-DBUILD_BLACKBOX_TESTS=OFF",
-                "-DBUILD_EXAMPLES=OFF"
-            ],
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "cleanup": [
-                "/include",
-                "*.pc",
-                "/lib/*/cmake",
-                "libZXing.so"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/zxing-cpp/zxing-cpp/archive/v2.1.0.tar.gz",
-                    "sha256": "6d54e403592ec7a143791c6526c1baafddf4c0897bb49b1af72b70a0f0c4a3fe",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 101246,
-                        "stable-only": true,
-                        "url-template": "https://github.com/zxing-cpp/zxing-cpp/archive/v$version.tar.gz"
                     }
                 }
             ]
@@ -134,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "d28ec1cb9bdd44f4b73c23c651b1adfa233981f6d7b1c760e8a7a72c1cdc6f16",
-                    "url": "https://download.kde.org/unstable/kaidan/0.10.1/kaidan-0.10.1.tar.xz",
+                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
+                    "url": "https://download.kde.org/unstable/kaidan/0.11.0/kaidan-0.11.0.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
