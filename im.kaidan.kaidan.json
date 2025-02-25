@@ -79,6 +79,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
+                        "versions": {"<": "1.5.0"},
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
                     }
