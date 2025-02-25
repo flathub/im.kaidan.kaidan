@@ -16,12 +16,13 @@
         "--env=LD_LIBRARY_PATH=/usr/lib/"
     ],
     "separate-locales": false,
-
     "modules": [
         {
             "name": "libomemo-c",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DBUILD_SHARED_LIBS=ON"],
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -39,7 +40,12 @@
         {
             "name": "qxmpp",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DQT_VERSION_MAJOR=6", "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON"],
+            "config-opts": [
+                "-DQT_VERSION_MAJOR=6",
+                "-DBUILD_TESTS=OFF",
+                "-DBUILD_EXAMPLES=OFF",
+                "-DBUILD_OMEMO=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -53,14 +59,18 @@
                     }
                 }
             ],
-            "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/lib/pkgconfig"
+            ]
         },
         {
             "name": "kirigami-addons",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
             ],
-            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
@@ -81,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
                     "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.4.0.tar.xz",
+                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
@@ -98,8 +108,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
                     "url": "https://download.kde.org/unstable/kaidan/0.11.0/kaidan-0.11.0.tar.xz",
+                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
