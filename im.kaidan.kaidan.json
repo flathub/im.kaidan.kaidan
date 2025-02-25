@@ -97,6 +97,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
+                        "versions": {"<": "0.5.0"},
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-$version.tar.xz"
                     }
