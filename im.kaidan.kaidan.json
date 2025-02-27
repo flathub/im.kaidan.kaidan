@@ -16,12 +16,13 @@
         "--env=LD_LIBRARY_PATH=/usr/lib/"
     ],
     "separate-locales": false,
-
     "modules": [
         {
             "name": "libomemo-c",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DBUILD_SHARED_LIBS=ON"],
+            "config-opts": [
+                "-DBUILD_SHARED_LIBS=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -39,12 +40,17 @@
         {
             "name": "qxmpp",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DQT_VERSION_MAJOR=6", "-DBUILD_TESTS=OFF", "-DBUILD_EXAMPLES=OFF", "-DBUILD_OMEMO=ON"],
+            "config-opts": [
+                "-DQT_VERSION_MAJOR=6",
+                "-DBUILD_TESTS=OFF",
+                "-DBUILD_EXAMPLES=OFF",
+                "-DBUILD_OMEMO=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.9.4.tar.gz",
-                    "sha256": "4403e43a0e8b6afa68f6e1e986e4ec19a08a6bf0db539ab7934a58afa1ddc532",
+                    "url": "https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.10.1.tar.gz",
+                    "sha256": "a9e95847c432cbf9ad36aa6d1596d66aa8f644d6983926457235fb64343bc42c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4149,
@@ -53,14 +59,18 @@
                     }
                 }
             ],
-            "cleanup": [ "/include", "/lib/cmake", "/lib/pkgconfig" ]
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/lib/pkgconfig"
+            ]
         },
         {
             "name": "kirigami-addons",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
             ],
-            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
@@ -69,6 +79,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
+                        "versions": {"<": "1.5.0"},
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
                     }
@@ -81,11 +92,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
                     "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.4.0.tar.xz",
+                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
+                        "versions": {"<": "0.5.0"},
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-$version.tar.xz"
                     }
@@ -98,8 +110,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
                     "url": "https://download.kde.org/unstable/kaidan/0.11.0/kaidan-0.11.0.tar.xz",
+                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
