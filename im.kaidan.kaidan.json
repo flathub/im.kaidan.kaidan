@@ -6,14 +6,14 @@
     "sdk": "org.kde.Sdk",
     "command": "kaidan",
     "finish-args": [
+        "--device=all",
+        "--device=dri",
+        "--env=LD_LIBRARY_PATH=/usr/lib/",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=dri",
-        "--device=all",
-        "--talk-name=org.freedesktop.Notifications",
-        "--env=LD_LIBRARY_PATH=/usr/lib/"
+        "--talk-name=org.freedesktop.Notifications"
     ],
     "separate-locales": false,
     "modules": [
