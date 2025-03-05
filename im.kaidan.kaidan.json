@@ -93,12 +93,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.4.0.tar.xz",
-                    "sha256": "d853894811d350fae499c67ebaafb2cc252d3c818b89fcf71757bc34f541a3fb",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.5.1.tar.xz",
+                    "sha256": "f08271f368ead077fa3ed95c32446dd873f8b371d9756aefb757bea323339b29",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
-                        "versions": {"<": "0.5.0"},
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-$version.tar.xz"
                     }
