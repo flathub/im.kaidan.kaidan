@@ -67,6 +67,26 @@
             ]
         },
         {
+            "name": "kdsingleapplication",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DKDSingleApplication_QT6=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz",
+                    "sha256": "1f19124c0aa5c6fffee3da174f7d2e091fab6dca1e123da70bb0fe615bfbe3e8",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 370439,
+                        "stable-only": true,
+                        "url-template": "https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "kirigami-addons",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -132,8 +152,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/kaidan/0.11.0/kaidan-0.11.0.tar.xz",
-                    "sha256": "3feef43d66ff5c30ae81894a7343da1856ca84b0177b8a07922f193ca33776a2",
+                    "url": "https://download.kde.org/unstable/kaidan/0.12.0/kaidan-0.12.0.tar.xz",
+                    "sha256": "ff9e22d1f8e61acf0dc415d1fadf01ee2749f472d1a8ea5eb0538559c5db2ebf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
