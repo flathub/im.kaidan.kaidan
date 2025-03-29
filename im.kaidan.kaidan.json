@@ -27,8 +27,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.0.tar.gz",
-                    "sha256": "03195a24ef7a86c339cdf9069d7f7569ed511feaf55e853bfcb797d2698ba983",
+                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.1.tar.gz",
+                    "sha256": "d1b65dbf7bccc67523abfd5e429707f540b2532932d128b2982f0246be2b22a0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 359676,
