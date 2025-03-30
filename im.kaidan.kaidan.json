@@ -19,6 +19,26 @@
     "separate-locales": false,
     "modules": [
         {
+            "name": "libprotobuf-c",
+            "buildsystem": "autotools",
+            "config-opts": [
+                "--disable-protoc"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.1.tar.gz",
+                    "sha256": "f3046f94ef6f85cf4311f6c4c51e2095c381ce7bb7fd4f90ea8d9cd99fca3c04",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3716,
+                        "stable-only": true,
+                        "url-template": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "libomemo-c",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -27,8 +47,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.0.tar.gz",
-                    "sha256": "03195a24ef7a86c339cdf9069d7f7569ed511feaf55e853bfcb797d2698ba983",
+                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.1.tar.gz",
+                    "sha256": "d1b65dbf7bccc67523abfd5e429707f540b2532932d128b2982f0246be2b22a0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 359676,
