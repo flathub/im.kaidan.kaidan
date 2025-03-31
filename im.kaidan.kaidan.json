@@ -172,8 +172,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/kaidan/0.12.0/kaidan-0.12.0.tar.xz",
-                    "sha256": "ff9e22d1f8e61acf0dc415d1fadf01ee2749f472d1a8ea5eb0538559c5db2ebf",
+                    "url": "https://download.kde.org/unstable/kaidan/0.12.1/kaidan-0.12.1.tar.xz",
+                    "sha256": "c861f728162dba4602c55b1a4d727d9fc4fae69061fa607d8f30d6275753142e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
