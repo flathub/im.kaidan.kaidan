@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.11.3.tar.xz",
-                    "sha256": "36b81d7ca269731ce9313a3346af87d84e234f15703ad3adafd2f9308ae188a5",
+                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.12.0.tar.xz",
+                    "sha256": "5264065d5d3856df8702351379a128fc97b6ad7b98a183ff49ce0d113941dd54",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4149,
@@ -155,8 +155,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "d2f1781bcdb0f1ca2fe6abbcde93c0d84507f0cee23650dfd94eb8a1b7e94c8c",
-                    "url": "https://download.kde.org/stable/release-service/25.08.2/src/ffmpegthumbs-25.08.2.tar.xz",
+                    "sha256": "84ecd131a50799815f414522fc1270c56e0ee45bbfaf96f9e1d2c9278dc84962",
+                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/ffmpegthumbs-25.08.3.tar.xz",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
