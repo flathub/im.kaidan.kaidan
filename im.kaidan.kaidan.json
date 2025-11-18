@@ -172,13 +172,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/kaidan/0.12.2/kaidan-0.12.2.tar.xz",
-                    "sha256": "807ae30f2739b395426183dfb7452f84bc055fed775b7751857e570b40f01761",
+                    "url": "https://download.kde.org/unstable/kaidan/0.13.0/kaidan-0.13.0.tar.xz",
+                    "sha256": "b5b76cb1e78f0edbb07bfc63e972f64ac1a8322c57fe62a0e0e1992653784b20",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/unstable/kaidan/kaidan-$version.tar.xz"
+                        "url-template": "https://download.kde.org/unstable/kaidan/$version/kaidan-$version.tar.xz"
                     }
                 }
             ]
