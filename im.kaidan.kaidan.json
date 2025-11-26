@@ -13,122 +13,14 @@
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
+        "--socket=pulseaudio",
         "--socket=wayland",
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets"
     ],
     "separate-locales": false,
     "modules": [
-        {
-            "name": "libprotobuf-c",
-            "buildsystem": "autotools",
-            "config-opts": [
-                "--disable-protoc"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.2.tar.gz",
-                    "sha256": "cea46eeaa19c52924938b582c5d128a6ed3b6fb5b3f4677476a1781cc06e03f3",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 3716,
-                        "stable-only": true,
-                        "url-template": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "libomemo-c",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_SHARED_LIBS=ON"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.1.tar.gz",
-                    "sha256": "d1b65dbf7bccc67523abfd5e429707f540b2532932d128b2982f0246be2b22a0",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 359676,
-                        "stable-only": true,
-                        "url-template": "https://github.com/dino/libomemo-c/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "qxmpp",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DQT_VERSION_MAJOR=6",
-                "-DBUILD_TESTS=OFF",
-                "-DBUILD_EXAMPLES=OFF",
-                "-DBUILD_OMEMO=ON"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.12.0.tar.xz",
-                    "sha256": "5264065d5d3856df8702351379a128fc97b6ad7b98a183ff49ce0d113941dd54",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 4149,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/unstable/qxmpp/qxmpp-$version.tar.xz"
-                    }
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/cmake",
-                "/lib/pkgconfig"
-            ]
-        },
-        {
-            "name": "kdsingleapplication",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DKDSingleApplication_QT6=ON"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.2.0.tar.gz",
-                    "sha256": "ff4ae6a4620beed1cdb3e6a9b78a17d7d1dae7139c3d4746d4856b7547d42c38",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 370439,
-                        "stable-only": true,
-                        "url-template": "https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "kirigami-addons",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz",
-                    "sha256": "56e3ceb52055b5603320ea08b27d3673d32a391a8d58646d998227d8b51f0a93",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 242933,
-                        "versions": {
-                            "<": "1.5.0"
-                        },
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
-                    }
-                }
-            ]
-        },
+
         {
             "name": "kquickimageeditor",
             "buildsystem": "cmake-ninja",
@@ -155,8 +47,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "sha256": "84ecd131a50799815f414522fc1270c56e0ee45bbfaf96f9e1d2c9278dc84962",
                     "url": "https://download.kde.org/stable/release-service/25.08.3/src/ffmpegthumbs-25.08.3.tar.xz",
+                    "sha256": "84ecd131a50799815f414522fc1270c56e0ee45bbfaf96f9e1d2c9278dc84962",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -169,16 +61,6 @@
         {
             "name": "qtkeychain",
             "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "cleanup": [
-                "mkspecs"
-            ],
-            "config-opts": [
-                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
-                "-DLIB_INSTALL_DIR=/app/lib",
-                "-DBUILD_TRANSLATIONS=NO",
-                "-DBUILD_WITH_QT6=ON"
-            ],
             "sources": [
                 {
                     "type": "archive",
@@ -186,10 +68,123 @@
                     "sha256": "f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 4138,
+                        "project-id": 381807,
                         "stable-only": true,
                         "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/$version.tar.gz"
                     }
+                }
+            ],
+            "config-opts": [
+                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                "-DLIB_INSTALL_DIR=/app/lib",
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/mkspecs"
+            ],
+            "modules": [
+                {
+                    "name": "libsecret",
+                    "buildsystem": "meson",
+                    "config-opts": [
+                        "-Dmanpage=false",
+                        "-Dvapi=false",
+                        "-Dgtk_doc=false",
+                        "-Dintrospection=false",
+                        "-Dcrypto=disabled"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz",
+                            "sha256": "6b452e4750590a2b5617adc40026f28d2f4903de15f1250e1d1c40bfd68ed55e",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13150,
+                        "stable-only": true,
+                        "url-template": "https://download.gnome.org/sources/libsecret/${major}.${minor}/libsecret-$version.tar.xz"
+                    }
+                        }
+                    ],
+                    "cleanup": [
+                        "/bin/secret-tool",
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "qxmpp",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_EXAMPLES=OFF",
+                "-DBUILD_OMEMO=ON",
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.12.0.tar.xz",
+                    "sha256": "5264065d5d3856df8702351379a128fc97b6ad7b98a183ff49ce0d113941dd54",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 4149,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/unstable/qxmpp/qxmpp-$version.tar.xz"
+                    }
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/cmake",
+                "/lib/pkgconfig"
+            ],
+            "modules": [
+                {
+                    "name": "libomemo-c",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_SHARED_LIBS=ON"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/dino/libomemo-c/archive/refs/tags/v0.5.1.tar.gz",
+                            "sha256": "d1b65dbf7bccc67523abfd5e429707f540b2532932d128b2982f0246be2b22a0",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 359676,
+                                "stable-only": true,
+                                "url-template": "https://github.com/dino/libomemo-c/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libprotobuf-c",
+                            "buildsystem": "autotools",
+                            "config-opts": [
+                                "--disable-protoc"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.2.tar.gz",
+                                    "sha256": "cea46eeaa19c52924938b582c5d128a6ed3b6fb5b3f4677476a1781cc06e03f3",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 3716,
+                                        "stable-only": true,
+                                        "url-template": "https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v$version.tar.gz"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -212,3 +207,4 @@
         }
     ]
 }
+
