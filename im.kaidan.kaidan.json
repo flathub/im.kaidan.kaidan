@@ -66,8 +66,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/ffmpegthumbs-25.08.3.tar.xz",
-                    "sha256": "84ecd131a50799815f414522fc1270c56e0ee45bbfaf96f9e1d2c9278dc84962",
+                    "url": "https://download.kde.org/stable/release-service/25.12.0/src/ffmpegthumbs-25.12.0.tar.xz",
+                    "sha256": "e4784eefd1af57ed066092ce591bce8515cffda5d99668d7e7191af05ccc6bcf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -120,12 +120,12 @@
                             "type": "archive",
                             "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz",
                             "sha256": "6b452e4750590a2b5617adc40026f28d2f4903de15f1250e1d1c40bfd68ed55e",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 13150,
-                        "stable-only": true,
-                        "url-template": "https://download.gnome.org/sources/libsecret/${major}.${minor}/libsecret-$version.tar.xz"
-                    }
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 13150,
+                                "stable-only": true,
+                                "url-template": "https://download.gnome.org/sources/libsecret/${major}.${minor}/libsecret-$version.tar.xz"
+                            }
                         }
                     ],
                     "cleanup": [
@@ -227,4 +227,3 @@
         }
     ]
 }
-
