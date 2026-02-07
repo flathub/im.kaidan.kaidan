@@ -200,14 +200,6 @@
                     }
                 }
             ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig",
-                "/share/gtk-doc",
-                "/share/man",
-                "*.la",
-                "*.a"
-            ]
         },
         {
             "name": "kaidan",
