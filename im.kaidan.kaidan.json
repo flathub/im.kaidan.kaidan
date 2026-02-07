@@ -199,7 +199,7 @@
                         "url-template": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$version.tar.xz"
                     }
                 }
-            ],
+            ]
         },
         {
             "name": "kaidan",
