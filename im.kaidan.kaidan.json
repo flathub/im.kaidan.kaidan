@@ -181,6 +181,10 @@
         {
             "name": "gst-plugins-good",
             "buildsystem": "meson",
+            "no-make-install": true,
+            "post-install": [
+                "install -Dt /app/lib/gstreamer-1.0/ ext/qt6/libgstqml6.so"
+            ],
             "config-opts": [
                 "-Dqt6=enabled",
                 "-Dqt-egl=enabled",
