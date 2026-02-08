@@ -194,8 +194,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.9.tar.xz",
-                    "sha256": "f38566fb53ae56b7019a039475311756a28eb978a781154d67813dcb551ff5fe",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.0.tar.xz",
+                    "sha256": "d97700f346fdf9ef5461c035e23ed1ce916ca7a31d6ddad987f774774361db77",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 21852,
