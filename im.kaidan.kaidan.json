@@ -204,6 +204,10 @@
         {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
+            "no-make-install": true,
+            "post-install": [
+                "install -Dt /app/lib/gstreamer-1.0/ ext/qt6/libgstqml6.so"
+            ],
             "sources": [
                 {
                     "type": "archive",
