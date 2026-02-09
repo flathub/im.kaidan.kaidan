@@ -200,8 +200,8 @@
                         "type": "anitya",
                         "project-id": 21852,
                         "stable-only": true,
-                        "url-template": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$version.tar.xz",
-                        "version": {"<=": "1.26.10"}
+                        "versions": {"==": "1.26.10"},
+                        "url-template": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$version.tar.xz"
                     }
                 }
             ]
