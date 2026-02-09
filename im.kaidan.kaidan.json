@@ -179,7 +179,7 @@
             ]
         },
         {
-            "name": "gst-plugins-good-qml6glsink",
+            "name": "qml6glsink",
             "buildsystem": "meson",
             "no-make-install": true,
             "post-install": [
