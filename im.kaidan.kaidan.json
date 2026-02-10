@@ -179,6 +179,34 @@
             ]
         },
         {
+            "name": "qml6glsink",
+            "buildsystem": "meson",
+            "no-make-install": true,
+            "post-install": [
+                "install -Dt /app/lib/gstreamer-1.0/ ext/qt6/libgstqml6.so"
+            ],
+            "config-opts": [
+                "-Dqt6=enabled",
+                "-Dqt-egl=enabled",
+                "-Dqt-wayland=enabled",
+                "-Dqt-x11=enabled"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.26.10.tar.xz",
+                    "sha256": "7beacb5daba3c6751ebc1c85017d9b1d6de64e24798125932c73c8b1dbeb3bc9",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 21852,
+                        "stable-only": true,
+                        "versions": {"==": "1.26.10"},
+                        "url-template": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "kaidan",
             "buildsystem": "cmake-ninja",
             "sources": [
