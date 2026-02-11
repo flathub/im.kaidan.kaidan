@@ -122,8 +122,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.14.0.tar.xz",
-                    "sha256": "9a3c768217cea8d1da88440e8a8de5143aefbf5277cd035a85aca50e418e70c4",
+                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.14.1.tar.xz",
+                    "sha256": "fbce5b232d8311641dd4d47a172b63bdaebb23de4caf8093c9973701bd8a0769",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4149,
@@ -200,7 +200,9 @@
                         "type": "anitya",
                         "project-id": 21852,
                         "stable-only": true,
-                        "versions": {"==": "1.26.10"},
+                        "versions": {
+                            "==": "1.26.10"
+                        },
                         "url-template": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-$version.tar.xz"
                     }
                 }
