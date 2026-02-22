@@ -122,8 +122,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.14.1.tar.xz",
-                    "sha256": "fbce5b232d8311641dd4d47a172b63bdaebb23de4caf8093c9973701bd8a0769",
+                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.14.2.tar.xz",
+                    "sha256": "3f63c05e65da40b844c8c5801d590f5a7ba02d4f83420c4471bbe6ce39d0a61b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4149,
