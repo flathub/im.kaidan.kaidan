@@ -76,8 +76,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/ffmpegthumbs-26.04.0.tar.xz",
-                    "sha256": "7663ba531dbd90fbb15d6309fd94e96a4b283f57d8a48da6778f7130ee45c5f1",
+                    "url": "https://download.kde.org/stable/release-service/26.04.1/src/ffmpegthumbs-26.04.1.tar.xz",
+                    "sha256": "df38f6782f02f4a941c25bee7edee22f48865109e27419c599b71d155a57f4fe",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/0.15.0.tar.gz",
-                    "sha256": "f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22",
+                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/0.16.0.tar.gz",
+                    "sha256": "3be26ec4ae30eecf0c2ff7572ba83799791b157c76e15a05ef35f23dc25e4054",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 381807,
