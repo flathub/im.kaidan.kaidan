@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.6.1.tar.xz",
-                    "sha256": "b868800bb9bb814ee36c9d696be9ccec9a22ab6f975d789e248b75fbd1ba99fa",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.6.2.1.tar.xz",
+                    "sha256": "6d37a479463dcd16e4746d8b43d4adb05640e8b49056baabc82c865e2e1a4c85",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
@@ -122,8 +122,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.15.1.tar.xz",
-                    "sha256": "0747758a4f5b5ea4c60686c65b390766f1909d09e1a5a457c8e80ef272730c46",
+                    "url": "https://download.kde.org/unstable/qxmpp/qxmpp-1.16.1.tar.xz",
+                    "sha256": "d81a53808fc82fa811eb4a002bf13e2a1258edf5d63099e4766d00d5ece6ba61",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4149,
