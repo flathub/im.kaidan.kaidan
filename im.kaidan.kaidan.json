@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.6.2.tar.xz",
-                    "sha256": "dfa8d0c8e41404937f3361c41b19cf541bb746e1b4b6970886de639122f1c9bb",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.6.2.1.tar.xz",
+                    "sha256": "6d37a479463dcd16e4746d8b43d4adb05640e8b49056baabc82c865e2e1a4c85",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
@@ -214,8 +214,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/kaidan/0.15.0/kaidan-0.15.0.tar.xz",
-                    "sha256": "cdc2d6afa8f8ed4572e2421224219cfc7fdfab6da4fb77eb4ff099285da4e485",
+                    "url": "https://download.kde.org/unstable/kaidan/0.16.0/kaidan-0.16.0.tar.xz",
+                    "sha256": "b38a64c7b7524a32dffe08eeda034f76d3597a84d8f7afd25c658dab43fb074d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 361480,
