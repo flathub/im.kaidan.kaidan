@@ -17,7 +17,9 @@
         "--socket=pulseaudio",
         "--socket=wayland",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.kde.kwalletd5",
+        "--talk-name=org.kde.kwalletd6"
     ],
     "cleanup": [
         "/include",
