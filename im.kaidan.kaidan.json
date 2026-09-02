@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.6.2.tar.xz",
-                    "sha256": "dfa8d0c8e41404937f3361c41b19cf541bb746e1b4b6970886de639122f1c9bb",
+                    "url": "https://download.kde.org/stable/kquickimageeditor/kquickimageeditor-0.7.0.1.tar.xz",
+                    "sha256": "b65f32c44bd126cea5e1b5a6eb7cb0eb517277cb8de06675fa6be624b7da381a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 229033,
@@ -76,8 +76,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/ffmpegthumbs-26.04.3.tar.xz",
-                    "sha256": "a6d7a12a57f24113789203413d40a4355ce4c0aff516384ecd2c548ce42f389b",
+                    "url": "https://download.kde.org/stable/release-service/26.08.0/src/ffmpegthumbs-26.08.0.tar.xz",
+                    "sha256": "ec4d1e7255e8ed23b4fb913d276a02b3c41c5e0d7e62436947f074a64eea7638",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
