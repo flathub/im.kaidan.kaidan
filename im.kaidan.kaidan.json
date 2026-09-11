@@ -17,7 +17,9 @@
         "--socket=pulseaudio",
         "--socket=wayland",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.kde.kwalletd5",
+        "--talk-name=org.kde.kwalletd6"
     ],
     "cleanup": [
         "/include",
@@ -106,8 +108,7 @@
             "config-opts": [
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
                 "-DLIB_INSTALL_DIR=/app/lib",
-                "-DBUILD_TRANSLATIONS=NO",
-                "-DBUILD_WITH_QT6=ON"
+                "-DBUILD_TRANSLATIONS=NO"
             ]
         },
         {
