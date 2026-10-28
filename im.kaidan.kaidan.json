@@ -8,7 +8,6 @@
     "separate-locales": false,
     "finish-args": [
         "--device=all",
-        "--device=dri",
         "--env=LD_LIBRARY_PATH=/usr/lib/",
         "--filesystem=home",
         "--share=ipc",
